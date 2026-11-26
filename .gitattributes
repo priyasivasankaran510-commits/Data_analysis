@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize line endings across operating systems
+* text=auto eol=lf
+
+# Treat CSV and Markdown files as text
+*.csv text
+*.md text
+
+# Handle Jupyter Notebooks cleanly in GitHub diffs and language stats
+*.ipynb text linguist-detectable=true
